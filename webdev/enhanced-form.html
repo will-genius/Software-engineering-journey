@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header, main, footer {
+      max-width: 900px;
+      margin: auto;
+    }
+    fieldset {
+      border: 2px solid #4CAF50;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    legend {
+      font-weight: bold;
+      color: #4CAF50;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 15px 0;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    th {
+      background: #f4f4f4;
+    }
+    video, img {
+      max-width: 100%;
+      margin-top: 10px;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Enhanced HTML5 Form Example</h1>
+  <p>This page demonstrates a well-structured HTML document with lists, tables, media, and an accessible form.</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Steps to Complete Registration</h2>
+    <ol>
+      <li>Fill in your personal information.</li>
+      <li>Choose your preferences.</li>
+      <li>Review and submit the form.</li>
+    </ol>
+  </section>
+
+  
+  <section>
+    <h2>Available Courses</h2>
+    <table>
+      <tr>
+        <th>Course Name</th>
+        <th>Duration</th>
+        <th>Fee</th>
+      </tr>
+      <tr>
+        <td>Web Development</td>
+        <td>3 Months</td>
+        <td>$300</td>
+      </tr>
+      <tr>
+        <td>Data Science</td>
+        <td>6 Months</td>
+        <td>$600</td>
+      </tr>
+      <tr>
+        <td>Graphic Design</td>
+        <td>2 Months</td>
+        <td>$200</td>
+      </tr>
+    </table>
+  </section>
+
+  
+  <section>
+    <h2>Welcome Video</h2>
+    <video src="sample.mp4" controls width="400">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+123456789" pattern="\+?\d{7,15}" required>
+      </fieldset>
+
+     
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+          <option value="">--Choose a course--</option>
+          <option value="webdev">Web Development</option>
+          <option value="datasci">Data Science</option>
+          <option value="design">Graphic Design</option>
+        </select>
+
+        <label>Preferred Study Mode:</label>
+        <input type="radio" id="online" name="mode" value="online" required>
+        <label for="online">Online</label>
+        <input type="radio" id="offline" name="mode" value="offline">
+        <label for="offline">Offline</label>
+
+        <label for="newsletter">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" checked>
+      </fieldset>
+
+      
+      <fieldset>
+        <legend>Account Information</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Choose a username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Re-enter password" required>
+
+        <label for="referral">Referral Code (Read Only):</label>
+        <input type="text" id="referral" name="referral" value="WELCOME2025" readonly>
+      </fieldset>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Enhanced Form Example. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
