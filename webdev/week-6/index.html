@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Interactive Page</h1>
+  </header>
+
+  <!-- Section 1: Form with integrated password toggle -->
+  <section>
+    <h2>Sign Up Form</h2>
+    <form id="signupForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+      <button type="button" id="toggleBtn">👁️ Show/Hide</button><br><br>
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- Section 2: Click counter -->
+  <section>
+    <h2>Click Counter</h2>
+    <button id="countBtn">Click Me!</button>
+    <p>You've clicked <span id="countDisplay">0</span> times.</p>
+  </section>
+
+  <!-- Section 3: Background color changer -->
+  <section>
+    <h2>Change Background Color</h2>
+    <button class="colorBtn" data-color="white">White</button>
+    <button class="colorBtn" data-color="black">Black</button>
+    <button class="colorBtn" data-color="cream">Cream</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
